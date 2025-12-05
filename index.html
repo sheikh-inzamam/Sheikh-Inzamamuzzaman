@@ -1860,6 +1860,18 @@ Computer Science and Engineering graduate from Ahsanullah University of Science 
                                                 Now</button>
                                         </div>
                                     </form>
+
+                                    <div id="success-message" style="display:none; color:green; margin-top:10px;">
+  Your message has been sent successfully!
+</div>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Stop form from submitting
+    document.getElementById('success-message').style.display = 'block'; // Show success
+    this.reset(); // Clear form fields
+});
+</script>
                                     <p class="form-message mt-20"></p>
                                 </div><!-- /contact-form -->
                             </div><!-- /contact-wrapper -->
